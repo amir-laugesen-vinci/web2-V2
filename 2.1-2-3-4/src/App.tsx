@@ -1,5 +1,5 @@
 const App = () => {
-  const pageTitle = "Informations sur les films dans les cinémas";
+  const pageTitle = "Informations sur les films dans les cinémas special commit";
 
   const cinema1Name = "UGC DeBrouckère";
   const cinema1Movie1Title = "Film 1 - DeBrouckère";
