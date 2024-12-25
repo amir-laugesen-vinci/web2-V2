@@ -1,16 +1,17 @@
-interface FooterProps {
-    image: string;
-    children: React.ReactNode;
-    }
+import "./Footer.css";
 
+interface FooterProps {
+  image: string;
+  children: React.ReactNode;
+}
 
 const Footer = (props: FooterProps) => {
-    return (
-        <footer>
-            <img src={props.image} alt="logo" />
-            {props.children}
-        </footer>
-    );
-}
+  return (
+    <footer className="footer">
+      <div>{props.children}</div>
+      <img src={props.image} alt="logo" className="logo" />
+    </footer>
+  );
+};
 
 export default Footer;

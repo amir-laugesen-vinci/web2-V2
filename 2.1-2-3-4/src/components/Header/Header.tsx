@@ -1,15 +1,17 @@
+import "./Header.css";
+
 interface HeaderProps {
-    image: string;
-    children: React.ReactNode;
+  image: string;
+  children: React.ReactNode;
 }
 
 const Header = (props: HeaderProps) => {
-    return (
-        <footer>
-            <img src={props.image} alt="logo" />
-            {props.children}
-        </footer>
-    );
-}
+  return (
+    <header className="header">
+      <img src={props.image} alt="logo" className="logo" />
+      <div>{props.children}</div>
+    </header>
+  );
+};
 
 export default Header;
