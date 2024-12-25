@@ -1,3 +1,4 @@
+import { Movie } from "../../types";
 import Cinema from "../Main/Cinema";
 import PageTitle from "../Main/PageTitle";
 
@@ -6,7 +7,7 @@ const App = () => {
 
   const cinema1Name = "UGC DeBrouckère";
 
-  const moviesCinema1 = [
+  const moviesCinema1 : Movie[] = [
   {
     title: "HAIKYU-THE DUMPSTER BATTLE",
     director: "Susumu Mitsunaka",
@@ -27,7 +28,7 @@ const App = () => {
 
 const cinema2Name = "UGC Toison d'Or";
 
-const moviesCinema2 = [
+const moviesCinema2 : Movie[] = [
   {
     title: "THE WATCHERS",
     director: "Ishana Night Shyamalan",
